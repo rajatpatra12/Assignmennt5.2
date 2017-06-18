@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Vowels and Consonants</title>
+
+    <script type="text/javascript">
+
+
+        function isVowel(x) {
+
+            var result;
+
+            result = x == "A" || x == "E" || x == "I" || x == "O" || x == "U";
+            return result;
+        }
+
+        var input;
+
+        do {
+            input = prompt("Enter a character to check it's a vowel or not");
+            input = input.toUpperCase();
+            if (input.length == 1) {
+                alert(isVowel(input));
+            }
+        } while (input.length != 1);
+
+    </script>
+
+
+
+</head>
+
+<body>
+    
+
+    <div>
+    Vowel checker
+    </div>
+   
+</body>
+</html>
